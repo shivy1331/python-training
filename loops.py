@@ -66,10 +66,19 @@
 # print("Reversed string:", reverse_string("Hello World"))
 
 # words length
-def words_length(s):
-    revStr = ""
-    for word in s:
-        revStr += str(len(word)) + " "
-    print("Length of each word:", revStr.strip())
+# def words_length(s):
+#     revStr = ""
+#     for word in s:
+#         revStr += str(len(word)) + " "
+#     print("Length of each word:", revStr.strip())
 
-words_length(["Hello", "World", "Python", "Programming"])
+# words_length(["Hello", "World", "Python", "Programming"])
+
+# else clause in for loop
+for i in range(5):
+    if i == 3:
+        print("Breaking the loop at i =", i)
+        break
+    print(i)
+else:
+    print("Loop completed without break")  # This will execute after the loop finishes normally
