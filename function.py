@@ -25,3 +25,13 @@
 # 1. Built-in function -> print(), type(), len(), etc.
 # 2. User-defined function -> greet()
 # 3. Lambda function/anonymous function
+
+# lambda function
+x = int(input("Enter a number: "))
+square = lambda x: x * x
+print("Square of", x, "is:", square(x))
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+multiply = lambda x, y: x * y
+print("Multiplication of", a, "and", b, "is:", multiply(a, b))
