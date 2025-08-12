@@ -8,4 +8,5 @@ x = 2
 print(x**2) # exponentiantion
 
 # comparison operator
+# new
 
