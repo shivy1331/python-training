@@ -11,8 +11,12 @@
 # for fruit in fruits:
 #     print(fruit, end=" ")
 
-# while loop
-i = 0
-while i < 5:
+# for i in range
+for i in range(1, 10):
     print(i, end=" ")
-    i += 1
+
+# while loop
+# i = 0
+# while i < 5:
+#     print(i, end=" ")
+#     i += 1
