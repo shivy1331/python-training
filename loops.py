@@ -57,10 +57,19 @@
 # list_square([2,5,6, 7, 8])
 
 # reverse a string using for loop
-def reverse_string(s):
-    reversed_str = ''  
-    for char in s:
-        reversed_str = char + reversed_str # h + "" + e + h
-    return reversed_str
+# def reverse_string(s):
+#     reversed_str = ''  
+#     for char in s:
+#         reversed_str = char + reversed_str # h + "" + e + h, so on
+#     return reversed_str
 
-print("Reversed string:", reverse_string("Hello World"))
+# print("Reversed string:", reverse_string("Hello World"))
+
+# words length
+def words_length(s):
+    revStr = ""
+    for word in s:
+        revStr += str(len(word)) + " "
+    print("Length of each word:", revStr.strip())
+
+words_length(["Hello", "World", "Python", "Programming"])
