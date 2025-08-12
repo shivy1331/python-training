@@ -28,12 +28,21 @@
 #         print("Found banana at index", fruits.index(fruit))
 
 # write a function to use for loop and calculate su of the numbers for 1 to n
-num = int(input("Enter a number: "))
-def sum_of_numbers(n):
-    sum = 0
-    for i in range(1, n + 1):
-        sum += i
-    return sum
+# num = int(input("Enter a number: "))
+# def sum_of_numbers(n):
+#     sum = 0
+#     for i in range(1, n + 1):
+#         sum += i
+#     return sum
 
-print("The sum of numbers from 1 to", num, "is:", sum_of_numbers(num))
+# print("The sum of numbers from 1 to", num, "is:", sum_of_numbers(num))
 
+# write a function to count_vowels in a string using for loop
+def count_vowels(s):
+    count = 0
+    vowels = 'aeiou'
+    for char in s:
+        if char in vowels:
+            count += 1  
+    return count
+print("Number of vowels in the string:", count_vowels("Hello"))
