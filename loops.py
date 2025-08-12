@@ -38,11 +38,29 @@
 # print("The sum of numbers from 1 to", num, "is:", sum_of_numbers(num))
 
 # write a function to count_vowels in a string using for loop
-def count_vowels(s):
-    count = 0
-    vowels = 'aeiou'
+# def count_vowels(s):
+#     count = 0
+#     vowels = 'aeiou'
+#     for char in s:
+#         if char in vowels:
+#             count += 1  
+#     return count
+# print("Number of vowels in the string:", count_vowels("Hello"))
+
+# list square
+# def list_square(list1):
+#     list2 = []
+#     for i in list1:
+#         list2.append(i ** 2)
+#     print("List of squares:", list2)
+
+# list_square([2,5,6, 7, 8])
+
+# reverse a string using for loop
+def reverse_string(s):
+    reversed_str = ''  
     for char in s:
-        if char in vowels:
-            count += 1  
-    return count
-print("Number of vowels in the string:", count_vowels("Hello"))
+        reversed_str = char + reversed_str # h + "" + e + h
+    return reversed_str
+
+print("Reversed string:", reverse_string("Hello World"))
