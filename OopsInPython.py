@@ -22,3 +22,15 @@
 
 # polymorphism ->
 # polymorphism is the ability to present the same interface for different data types
+
+# abstracting ->
+# abstracting is the process of hiding the complex implementation details and showing only the essential features of the object
+
+# class student
+# student1 = {'name': 'rohan', 'age': 17, 'course': 'Mern'}
+# student2 = {'name': 'amit', 'age': 18, 'course': 'Mern'}
+# student3 = {'name': 'rav', 'age': 19, 'course': 'Mern'}
+# student4 = {'name': 'rak', 'age': 16, 'course': 'Mern'}
+
+# template or class
+
