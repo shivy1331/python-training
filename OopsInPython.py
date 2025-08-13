@@ -38,32 +38,43 @@
  #   pass
 #class ChildClass(ParentClass):
   #  pass
-class Grandfather:
-    def _init_(self):
-        self.hobby = "Reading the news"
-    def speak(self):
-        print("I am Grandfather. Hobby:", self.hobby)
+# class Grandfather:
+#     def _init_(self):
+#         self.hobby = "Reading the news"
+#     def speak(self):
+#         print("I am Grandfather. Hobby:", self.hobby)
 
-class Father(Grandfather):
-    def _init_(self):
-        super()._init_()
-        self.job = "Engineer"
-    def speak(self):
-        print("I am Father. Job:", self.job)
+# class Father(Grandfather):
+#     def _init_(self):
+#         super()._init_()
+#         self.job = "Engineer"
+#     def speak(self):
+#         print("I am Father. Job:", self.job)
 
-class Child(Father):
-    def _init_(self):
-        super()._init_()
-        self.school = "ABC School"
-    def speak(self):
-        print("I am Child. School:", self.school)
+# class Child(Father):
+#     def _init_(self):
+#         super()._init_()
+#         self.school = "ABC School"
+#     def speak(self):
+#         print("I am Child. School:", self.school)
 
-# Create objects and call methods
-gf = Grandfather()
-gf.speak()
+# # Create objects and call methods
+# gf = Grandfather()
+# gf.speak()
 
-ft = Father()
-ft.speak()
+# ft = Father()
+# ft.speak()
 
-ch = Child()
-ch.speak()
+# ch = Child()
+# ch.speak()
+
+# encapsulation
+class BankAccount:
+    def __init__(self, name, balance):
+        self.AccountHolderName = name
+        self.__balance = balance #private
+
+    def __str__(self):
+        return f"Account Holder Name:{self.AccountHolderName}"
+b1 = BankAccount("shivi", 50000)
+print(b1.balance)
