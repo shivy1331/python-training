@@ -39,3 +39,15 @@
 # print(b1.name)
 # print(b1.balance)
 # print(b1.AccountNo)
+
+class Trial:
+    @staticmethod
+    def greet():
+        print("hello ji")
+
+    def speak(self):
+        print("speak ji")
+
+# obj = Trial();
+Trial.speak("hello");
+# obj.speak();
